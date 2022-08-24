@@ -1,5 +1,5 @@
 # Life Expectancy is only Weakly Correlated with a Country’s GDP
-***A Data Science Capstone Project using Python, Pyplot and Seaborn to investigate the correlation of GDP with Life Expectancy***
+***A Data Science Analysis using Python, Pyplot and Seaborn to investigate the correlation of GDP with Life Expectancy (Codecademy Capstone Project)***
 #### by Justin R. Papreck
 ---
 
