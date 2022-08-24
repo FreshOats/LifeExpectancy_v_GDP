@@ -18,31 +18,37 @@ The data acquired from the World Health Organization included entries for 6 coun
 The initial investigation led to questionable conclusions showing that there was absolutely no correlation with a country’s GDP and Life Expectancy based on bar plots (not shown) or a violin plot. Examining the distributions of all life expectancies across the 16 year time frame from which the data were collected showed that Zimbabwe had a massive distribution compared to those of the other countries. 
   Looking at the other countries’ distributions, the only one that looks notably different is that of Mexico, which seems to have a much higher number in the lower half than in the upper half as the other countries seem to show. 
 
---INSERT VIOLIN PLOT--
+![Life_Country_violin](https://user-images.githubusercontent.com/33167541/186539935-dba51c15-f5f5-448a-a436-4147baa2e748.png)
+
 
 Now that we can see that most of the countries have a relatively narrow distribution compared to that of Zimbabwe, it will be important to consider this when looking at the further data in comparison with GDP. The range of life expectancies for Zimbabwe is between 35 and 68, a value that falls short of the minimum life expectancy for any other countries, all of which fall within the range of 70 to 82. 
 
 To better visualize the changes is life expectancy over time, I employed a few different visualizations, starting with bar graphs, which I thought gave a very good representation of both the life expectancy and GDP over time, though typically, we don’t usually use bar graphs for this purpose, so I followed these up with some more traditional facet grids of line graphs to show each country’s change of life expectancy and GDP by year. 
 
---INSERT BAR CHARTS--
+![GDP_Country_Year_bar](https://user-images.githubusercontent.com/33167541/186539981-9059e67c-4db5-42ea-b969-afb0509c2c17.png)
 
 As we examine these bar graphs from left to right, we see how the life expectancy and the GDP change each year. By quick glance, it is abundantly clear that the countries Chile and Zimbabwe have such low GDP that they are barely visible if at all on the right graph, yet when comparing the life expectancy from Chile with the other countries we can see it actually has one of the highest life expectancies, while Zimbabwe shows the opposite. 
 
 But looking past this, there is a notable trend in that while the GDP of each country increases, the life expectancy also tends in the positive direction. This is further shown in the following facet grids of the same data using line graphs.  
 
---INSERT BLUE LINE LE/Y/Country--
+![Life_Country_Year_facet](https://user-images.githubusercontent.com/33167541/186540084-09375e6e-4e4a-4b49-961d-85b7af6d885b.png)
 
---INSERT BLUE LINE GDP/Y/Country--
+
+![GDP_Country_Year_facet](https://user-images.githubusercontent.com/33167541/186540100-3b9ff339-49ca-4c4f-ac99-9b878d9dab56.png)
+
 
 Before continuing with a more multidimensional representation of this data, I wanted to look closer at the 5 countries which had much closer life expectancies to examine the trends without the scaling effect from including Zimbabwe. Here it becomes a little more evident that the countries with the lowest GDP had more fluctuation in life expectancies each year. The dip in the life expectancy in Chile didn’t correlate with the seemingly stable GDP. Mexico did have a fluctuation in GDP around the same time as there was a drop in life expectancy, though the USA had a major stall in the GDP from 2008 to 2012, yet the life expectancy continued to increase. Furthermore, the country with the greatest increase in GDP was China, yet China still lags behind the other countries in life expectancy.
 
---INSERT RED LE/Y/Country--
+![Life_Country_Year_noZ](https://user-images.githubusercontent.com/33167541/186540122-e6c06210-1387-41c4-8f10-2d956c07cd0d.png)
 
---INSERT RED GDP/Y/Country--
+
+![GDP_Country_Year_noZ](https://user-images.githubusercontent.com/33167541/186540137-10acd69f-e9ff-4afe-9e5e-c01d3fff91a1.png)
+
 
 Finally, using a facet grid scatter plot, I can show the distribution of the life expectancies (life expectancy at birth year: LEABY) with GDP for each of the countries in each of the years. There is a cluster in the upper left of each of these containing Chile, Germany, and Mexico. Initially China also lies within this cluster, though over time, the GDP of China increases, thus the data point moves to the right over time. Along the same concept, the data point for Zimbabwe moves downward and then upward as the life expectancy changes, though the point remains on the far left as the country’s GDP does not change. The USA is substantially different from the cluster, as the GDP of the USA is significantly higher than the other, yet vertically it is on the same level, as the life expectancy is no different from the other countries excluding Zimbabwe.
 
---INSERT FACET--
+![GDP_Life_Country_Year_facet](https://user-images.githubusercontent.com/33167541/186540169-f0eeba56-528d-4913-bd49-9b467a49064a.png)
+
 
 
 ---
